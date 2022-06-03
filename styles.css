@@ -1,0 +1,46 @@
+html, body {
+    margin: 0;
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color:ghostwhite;
+    width: 80%;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.content {
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0px 10px;
+}
+
+p {
+    font-size: 16px;
+    text-align: center;
+    min-height: 20px;
+}
+
+footer, header {
+    background-color: rgb(237, 236, 236);
+}

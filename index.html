@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <script src="rps.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Rock Paper Scissors</h1>
+        </header>
+        <div class="content">
+            <div class="container">
+                <p>Game starts here! Nr rounds: <input type="number" id="nrRounds" min="1" max="10" value="5"></p>
+                <button id="restart">Start</button>
+            </div>
+            <div class="items">
+                <button id="rock">Rock</button>
+                <button id="paper">Paper</button>
+                <button id="scissors">Scissors</button>
+            </div>
+            <div>
+                <p>Result:</p>
+                <p id="results"> </p>
+            </div>
+            <div>
+                <p>Round <span id="roundNumber"></span> result:</p>
+                <p id="roundResult"> </p>
+            </div>
+        </div>
+        <footer>
+            <p>Copyright 2022</p>
+        </footer>
+    </div> 
+</body>
+</html>
