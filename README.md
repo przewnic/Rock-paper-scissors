@@ -1,4 +1,4 @@
-# rock-paper-scissors
+# Rock-paper-scissors
 
 Rock Paper Scissors Web Game using JavaScript
 
