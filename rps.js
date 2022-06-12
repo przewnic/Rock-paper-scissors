@@ -7,6 +7,7 @@ const gameResults = document.querySelector("#results");
 const roundResult = document.querySelector("#roundResult");
 const roundNumber = document.querySelector("#roundNumber");
 const nrRounds = document.querySelector("#nrRounds");
+const moves = document.getElementById("moves");
 
 const game = {
     playerPoints: 0, 
@@ -60,6 +61,7 @@ function play(e) {
     roundPlayed = playRound(playerSelection, computerSelection);
     if (roundPlayed == "WIN") game.playerPoints += 10;
     if (roundPlayed == "LOSE") game.computerPoints +=10;
+    moves.textContent = `Computer: ${computerSelection} vs You: ${playerSelection}`;
     roundResult.textContent = `You ${roundPlayed} this round.\n`+`You got ${game.playerPoints} after this round.`;
     roundNumber.textContent = game.round;
     game.round += 1;
@@ -90,4 +92,5 @@ function restart() {
     gameResults.textContent = "";
     roundResult.textContent = "";
     roundNumber.textContent = " ";
+    moves.textContent = "New game!"
 }
